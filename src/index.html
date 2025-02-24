@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" href="./assets/img/4geeks.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Poker Card Generator</title>
 
     <!-- Fontawesome is our recomended library for icons -->
     <link
@@ -13,21 +13,51 @@
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
+
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./assets/img/rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    
+      <div class="container">
+        <div>
+          
+        </div>
+
+
+        <div id="IDCARD" class="card">
+          <p id="cardcontent"></p>
+          <p id="suittopleft"></p>
+          <p id="suitbottomright"></p>
+        </div>
+
+        
+
       </div>
-    </div>
+
+      <div class="buttons">
+        <button id="reload" onclick="reload()">Reload</button><br>
+
+        <button id="tempstart" onclick="startTemp()">Start</button><br>
+  
+        <button id="tempstop" onclick="stopTemp()">Stop</button><br>
+      </div>
+
+      
+
+
+
+      <div class="dimensions">
+          <label for="width" style="color: rgb(188, 230, 3); font-weight:bold;">Ancho:</label>
+          <input type="text" id="width" class="changeWidth">
+    
+          <label for="height" style="color: rgb(153, 5, 5); font-weight: bold;">Altura:</label>
+          <input type="text" id="height" class="changeHeight">
+      </div>
+     
+      
+
+    
 
     <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
     <script type="module" src="/app.js"></script>

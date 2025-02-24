@@ -1,5 +1,102 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 body{
-    background: blue;
+    background-image: url(./assets/img/perfect-green-grass.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    
+
 }
+
+.container{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timebtn{
+    top: 10px;
+
+}
+
+
+.dimensions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#reload{
+    margin: 0;
+    padding: 14px 50px 14px 50px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgb(4, 44, 9);
+    border:solid green;
+    background-color: rgb(77, 241, 99);
+
+}
+
+#tempstart{
+    margin: 0;
+    padding: 14px 50px 14px 50px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgb(4, 44, 9);
+    border:solid green;
+    background-color: rgb(77, 241, 99);
+    
+    
+}
+
+#tempstop{
+    margin: 0;
+    padding: 14px 50px 14px 50px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgb(4, 44, 9);
+    border:solid green;
+    background-color: rgb(77, 241, 99);
+    
+}
+.card{
+    top: -50px;
+    width: 180px;
+    height: 320px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 300px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgb(4, 44, 9);
+    position: relative;
+}
+
+#cardcontent{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 70px;
+}
+
+#suittopleft{
+
+    font-size: 40px;
+    position: absolute;
+    top: -5px;
+    left: 20px;
+   
+}
+
+#suitbottomright{
+
+    font-size: 40px;
+    position: absolute;
+    bottom: -15px;
+    right: 20px;
+    transform: rotate(180deg);
+}
+
